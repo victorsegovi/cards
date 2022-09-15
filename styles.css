@@ -43,7 +43,7 @@ body{
 .container:hover{
     opacity: 1;
     width: 400px;
-    height: 98vh;
+    height: 600px;
     border-radius: 24px;
 }
 
@@ -59,13 +59,32 @@ body{
     opacity: 1;
 }
 
-.victor{
+.victor, .lady, .logo{
     width: 30%;
-    background-image: linear-gradient(to top right, #111,#fefefe);
     border-radius: 56px;
-    padding: 1rem;
     margin-bottom: 2rem;
     margin-right: 5%;
+    overflow: hidden;
+}
+
+.victor{
+    background-image: linear-gradient(to top right,#0f0f0f, #f1f1f1);
+    padding: 1rem;
+}
+
+.lady, .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-color: whitesmoke;
+}
+
+.victor img, .lady img, .logo img{
+    max-height: 90px;
+    border-radius: 56px;
 }
 
 .titulo{
